@@ -4,16 +4,7 @@
 
 <head>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" rel="stylesheet">
-     <style>
-        /* Ensure modal is vertically centered */
-        .modal-dialog {
-            display: flex;
-            align-items: center;
-            min-height: calc(100% - 1rem);
-        }
-    </style>
 </head>
-
 <body>
     <!-- Button to Open Modal -->
     <button type="button" id="open-modal" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#newton-modal">
@@ -22,7 +13,7 @@
 
     <!-- Modal Structure -->
     <div class="modal fade" id="newton-modal" tabindex="-1" aria-labelledby="newton-modal-label" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-dialog-centered"> <!-- Added modal-dialog-centered class -->
             <div class="modal-content">
                 <!-- Modal Header -->
                 <div class="modal-header">
